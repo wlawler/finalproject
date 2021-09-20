@@ -2,13 +2,13 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule}  from '@angular/router'; 
 
-import { Store } from "../../store";
+import { Store } from "../store";
 
 // feature modules 
-import { AuthModule } from "../../auth/auth.module";
+import { AuthModule } from "../auth/auth.module";
 
 // containers 
-import { AppComponent } from "./app.component";
+import { AppComponent } from "./containters/app.component";
 
 //components 
 
