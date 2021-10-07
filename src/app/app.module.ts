@@ -8,7 +8,7 @@ import { Store } from "../store";
 import { AuthModule } from "../auth/auth.module";
 
 // containers 
-import { AppComponent } from "./containters/app.component";
+import { AppComponent } from "./containers/app.component";
 
 //components 
 
