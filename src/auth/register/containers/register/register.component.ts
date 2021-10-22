@@ -3,7 +3,7 @@ import { Form, FormGroup } from '@angular/forms';
 
 @Component({
 	selector: 'register', 
-	templateUrl: './register/register.component.html'
+	templateUrl: './register.component.html'
 }) 
 
 export class RegisterComponent {

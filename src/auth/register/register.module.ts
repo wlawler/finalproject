@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { Sharedrmodule } from "../shared/share.module";
+import { Sharedrmodule } from "../shared/shared.module";
 
 import {RegisterComponent} from './containers/register/register.component';
 
