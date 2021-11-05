@@ -1,7 +1,7 @@
-import { NgModule } from "@angular/core";
+import { /*ModuleWithProviders*/ NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { Sharedrmodule } from "../shared/shared.module";
+import { Sharedmodule } from "../shared/shared.module";
 
 import {RegisterComponent} from './containers/register/register.component';
 
@@ -13,7 +13,7 @@ export const ROUTES: Routes = [
 	imports: [
 		CommonModule,
 		RouterModule.forChild(ROUTES), 
-		Sharedrmodule
+		Sharedmodule
 	], 
 	declarations: [
 		RegisterComponent
@@ -21,4 +21,14 @@ export const ROUTES: Routes = [
 	
 })
 
-export class Registermodule {}
+export class Registermodule {
+
+
+/*	static forRoot(): ModuleWithProviders {
+		return {
+                    ngModule : SharedModule, 
+		    providers: [
+			    AuthService
+		    ]
+		};*/
+	}

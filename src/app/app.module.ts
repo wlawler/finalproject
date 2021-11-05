@@ -13,6 +13,7 @@ import { AppComponent } from "./containers/app.component";
 //components 
 
 // routes
+
 export const ROUTES: Routes = []; 
 
 @NgModule ({
@@ -33,3 +34,5 @@ export const ROUTES: Routes = [];
 })
 
 export class AppModule {}
+
+*/

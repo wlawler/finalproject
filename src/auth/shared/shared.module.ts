@@ -2,9 +2,12 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 import {  Routes } from '@angular/router';
 import { ReactiveFormsModule } from "@angular/forms";
-
+//components 
 import { RegisterComponent } from "../register/containers/register/register.component";
 import { AuthFormComponent } from "./components/auth-form/auth-form.component";
+
+//services
+import { AuthService } from "./services/auth/auth.service";
 	
 export const ROUTES: Routes = [
 	{ path: '', component: RegisterComponent}
@@ -24,4 +27,4 @@ export const ROUTES: Routes = [
 	
 })
 
-export class Sharedrmodule {}
+export class Sharedmodule {}
