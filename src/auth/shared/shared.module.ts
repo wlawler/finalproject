@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { ModuleWithProviders, NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 import {  Routes } from '@angular/router';
 import { ReactiveFormsModule } from "@angular/forms";
@@ -27,4 +27,16 @@ export const ROUTES: Routes = [
 	
 })
 
-export class Sharedmodule {}
+export class Sharedmodule {
+	//static forRoot(): ModuleWithProviders {}
+
+	/*return {
+		ngModue: Sharedmodule, 
+		providers: [
+			AuthService
+
+		]
+	};
+}
+	*/
+}
