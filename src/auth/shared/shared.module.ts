@@ -28,15 +28,16 @@ export const ROUTES: Routes = [
 })
 
 export class Sharedmodule {
-	//static forRoot(): ModuleWithProviders {}
+	static forRoot(): ModuleWithProviders<Sharedmodule> {
 
-	/*return {
-		ngModue: Sharedmodule, 
+	return {
+		ngModule: Sharedmodule, 
 		providers: [
 			AuthService
 
 		]
 	};
-}
-	*/
+    }
+
+	
 }

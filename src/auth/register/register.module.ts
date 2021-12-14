@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { Sharedmodule } from "../shared/shared.module";
 
 import {RegisterComponent} from './containers/register/register.component';
+import { AngularFirestore } from "@angular/fire/firestore";
+import { AuthService } from "../shared/services/auth/auth.service";
 
 export const ROUTES: Routes = [
 	{ path: '', component: RegisterComponent}
@@ -17,7 +19,11 @@ export const ROUTES: Routes = [
 	], 
 	declarations: [
 		RegisterComponent
-	], 
+	],
+	providers: [
+		AngularFirestore,
+	        AuthService
+	] 
 	
 })
 

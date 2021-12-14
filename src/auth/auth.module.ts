@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AngularFireModule } from '@angular/fire';
-
+import {AngularFireAuthModule} from '@angular/fire/auth';
 
 
 
 //third-party-modules 
-//import {AngularFireModule, firebaseappconfig} from 'angularfire2'
-//import {AngularFireAuthModule} 'angularfire2/auth'
-//import AngularFireDatabaseModule from 'angularfire2/database'; 
+
+//import {firebaseConfig} from '../environments/environment'
+//import {AngularFireDatabaseModule} from '@angular/fire/compat/database'; 
 
 //shared modules 
 import { Sharedmodule } from './shared/shared.module';
@@ -30,25 +30,24 @@ export const ROUTES: Routes = [
   }
 ];
 
-/* export const firebaseConfig: FirebaseAppConfig = {
-
-	apiKey: "AIzaSvCXz7GrHLBs-xlsCrr185iG4v4UrNreq2Y", 
-	authDomain: "fitness-app-e668a.firebaseapp.com", 
-	databareURL: "https://fitness-app-e668a.firebaseio.com", 
-	projectId: "fitness-app-e668a", 
-	storageBucket: "fitness-app-e668a.appspot.com", 
-	messagingSenderId: "1014564696462"
-}
-*/
+const firebaseConfig = {
+  apiKey: "AIzaSyCcE5f1tP82bllk9LIrk_TIgFjIbshNS7M",
+  authDomain: "fitness-app-c6b29.firebaseapp.com",
+  databaseURL: "https://fitness-app-c6b29-default-rtdb.firebaseio.com",
+  projectId: "fitness-app-c6b29",
+  storageBucket: "fitness-app-c6b29.appspot.com",
+  messagingSenderId: "927413877196",
+  appId: "1:927413877196:web:6bad1c7a2ac0aca2df0569",
+  measurementId: "G-05BHX2SXH9"
+};
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES), 
     AngularFireModule,
-   // AngularFireAuthModule.initializeApp(firebaseConfig) ,
   // AngularFireDatabaseModule
-  Sharedmodule.forRoot()
+  Sharedmodule
   ], 
   
 })

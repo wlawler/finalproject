@@ -1,6 +1,11 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-import { Routes, RouterModule}  from '@angular/router'; 
+import { Routes, RouterModule}  from '@angular/router';
+
+//firebase
+import { environment } from "src/environments/environment"; 
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestore, AngularFirestoreModule} from "@angular/fire/firestore"
 
 import { Store } from "../store";
 
@@ -20,13 +25,16 @@ export const ROUTES: Routes = [];
 	imports: [
 		BrowserModule, 
 		RouterModule.forRoot(ROUTES), 
-		AuthModule
+		AuthModule,
+		AngularFireModule.initializeApp(environment.firebase), 
+		AngularFirestoreModule
 	], 
 	declarations: [
 		AppComponent
 	],
 	providers: [
-		Store
+		Store,
+		AngularFirestore
 	], 
 	bootstrap: [
 		AppComponent
@@ -35,4 +43,3 @@ export const ROUTES: Routes = [];
 
 export class AppModule {}
 
-*/
