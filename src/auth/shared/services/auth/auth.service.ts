@@ -2,8 +2,8 @@ import { Injectable } from "@angular/core";
 import { AngularFireAuth} from '@angular/fire/auth'
 import { Observable } from "rxjs";
 import { Store} from 'store';
+import 'rxjs/add/operator/do'
 import {tap} from 'rxjs/Operators'; 
-import { nextTick } from "process";
 
 export interface User{
 	email: string, 
@@ -15,21 +15,20 @@ export interface User{
 export class AuthService {
 
 	auth$ = this.af.authState.pipe(
-	 tap({
-	    next => {
+	 tap (next => {
 		    if (!next) {
 			    this.store.set('user', null); 
 			    return; 
 		    }
-		
+	 
 		const user: User = {
 			email: next.email, 
-			uid: nextTick.uid, 
+			uid: next.uid, 
 			authenticated: true
-		};
+		
 	};
 	this.store.set('user', user); 
-	 }); 
+	 })); 
 		
 
 	userData: any;
