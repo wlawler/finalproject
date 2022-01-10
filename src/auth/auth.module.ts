@@ -46,8 +46,8 @@ const firebaseConfig = {
     CommonModule,
     RouterModule.forChild(ROUTES), 
     AngularFireModule,
-  // AngularFireDatabaseModule
-  Sharedmodule
+  //AngularFireDatabaseModule,
+  Sharedmodule.forRoot()
   ], 
   
 })

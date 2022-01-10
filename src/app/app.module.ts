@@ -38,7 +38,8 @@ export const ROUTES: Routes = [];
 	],
 	providers: [
 		Store,
-		AngularFirestore
+		AngularFirestore, 
+		
 	], 
 	bootstrap: [
 		AppComponent
