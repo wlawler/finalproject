@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { AngularFireAuth} from '@angular/fire/auth'
 import { Observable } from "rxjs";
 import { Store} from 'store';
-import 'rxjs/add/operator/do'
+//import 'rxjs/add/operator/do'
 import {tap} from 'rxjs/Operators'; 
 
 export interface User{

@@ -15,7 +15,9 @@ import { AuthModule } from "../auth/auth.module";
 // containers 
 import { AppComponent } from "./containers/app.component";
 
-//components 
+//components
+import { AppHeaderComponent} from "./components/app-header/app-header.component";
+import {AppNavComponent} from "./components/app-nav/app-nav.component"
 
 // routes
 
@@ -30,7 +32,9 @@ export const ROUTES: Routes = [];
 		AngularFirestoreModule
 	], 
 	declarations: [
-		AppComponent
+		AppComponent,
+		AppHeaderComponent,
+		AppNavComponent
 	],
 	providers: [
 		Store,

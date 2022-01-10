@@ -13,7 +13,7 @@ export class AppComponent implements OnInit, OnDestroy {
   user$: Observable<User>; 
   subscription: Subscription; 
   constructor(
-     private store: AngularFirestore,
+     private store: Store,
      private authService: AuthService) {}
 
   ngOnInit() {

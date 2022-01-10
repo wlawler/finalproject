@@ -3,6 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "skipLibCheck":true,
     "paths": {
       "store": ["src/store.ts"]
     }, 
